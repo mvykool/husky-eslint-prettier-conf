@@ -4,8 +4,10 @@
 
 :root{
     --bg-dark:#041C32;
-    --bg-light:#FEFCF3
+    --bg-light:#FEFCF3;
 }
 
-background: rgb(204,251,255);
-background: linear-gradient(151deg, rgba(204,251,255,1) 32%, rgba(239,150,197,1) 80%);
+.gradient{
+    background: rgb(204,251,255);
+    background: linear-gradient(151deg,  rgba(145,168,208,1) 32%, rgba(239,150,197,1) 80%);
+}

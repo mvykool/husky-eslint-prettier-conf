@@ -10,9 +10,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main >
-        <div > 
+        <div className='bg-[var(--bg-dark)] w-screen h-screen' > 
 
-          <h1 className='text-green-500'>hola</h1>
+          <h1 className='gradient text-white font-bold w-20 p-4'>hola</h1>
      
         </div>
       </main>
