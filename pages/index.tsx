@@ -27,7 +27,11 @@ export default function Home({posts}: Props) {
 
         {/**feed */}
 
-        <Feed posts={posts} />
+        <div className='grid grid-cols-2 gap-2 w-[95vw] mx-auto'>
+          {posts?.map((post: any) => (
+            <Feed post={post} key={post._id} image={undefined}/>
+          ))}
+        </div>
 
         </div>
       </main>

@@ -1,15 +1,22 @@
 import React from 'react'
+import { urlFor } from '../lib/client'
+import Image from 'next/image'
 
 interface Props {
-    posts: any
-  
+    post: any
+    image: any
   }
   
 
-const Feed = ({posts}: Props) => {
+
+const Feed = ({post}: Props) => {
+
+
+
+
   return (
-    <div className='w-[90vw] mt-10'>
-        
+    <div className=' mt-10'>
+      <Image width={400} height={400} alt='pic' src={urlFor(post.image && post.image[0]).url()} />
     </div>
   )
 }

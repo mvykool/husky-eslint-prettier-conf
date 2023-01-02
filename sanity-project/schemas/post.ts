@@ -9,13 +9,14 @@ export default {
         type: 'string',
       },
       {
-        name: 'image',
-        title: 'Image',
-        type: 'file',
+        name: "image",
+        title: "Image",
+        type: "array",
+        of: [{ type: "image"}],
         options: {
-          hotspot: true,
-        },
-      },
+            hotspot: true,
+        }
+    },
       {
         name: 'userId',
         title: 'UserId',
