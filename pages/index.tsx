@@ -1,6 +1,15 @@
 import Head from 'next/head'
+import Categories from '../components/Categories';
+import Feed from '../components/Feed';
+import { client } from '../lib/client';
 
-export default function Home() {
+
+interface Props {
+  posts: any
+
+}
+
+export default function Home({posts}: Props) {
   return (
     <>
       <Head>
@@ -12,10 +21,30 @@ export default function Home() {
       <main >
         <div className='bg-[var(--bg-dark)] w-screen h-screen' > 
 
-          <h1 className='gradient text-white font-bold w-20 p-4'>hola</h1>
-     
+        {/**categories */}
+
+        <Categories/>
+
+        {/**feed */}
+
+        <Feed posts={posts} />
+
         </div>
       </main>
     </>
   )
 }
+
+
+//server side props
+
+export const getServerSideProps = async () => {
+
+  const postQuery = '*[_type == "post"]';
+  const posts = await client.fetch(postQuery);
+
+  return {
+   props: { posts }
+  }
+ 
+ }
