@@ -5,30 +5,30 @@ import Image from 'next/image'
 
 const Bar = () => {
   return (
-    <div className='h-16 w-full fixed bottom-0 gradient flex justify-around'>
+    <div className='h-14 w-full fixed bottom-0 gradient flex justify-around items-center'>
 
     {/**home link */}
 
     <Link href={'/'}>
-       <TiHome/>
+       <TiHome className='bar-icons'/>
     </Link>    
 
     {/**liked link */}
 
     <Link href={'/'}>
-       <TiHeartFullOutline/>
+       <TiHeartFullOutline className='bar-icons'/>
     </Link>  
 
      {/**add link */}
 
      <Link href={'/'}>
-       <TiPlus/>
+       <TiPlus className='bar-icons'/>
     </Link>  
 
      {/**add link */}
 
      <Link href={'/'}>
-       <TiSpanner/>
+       <TiSpanner className='bar-icons'/>
     </Link>  
 
 
@@ -37,7 +37,7 @@ const Bar = () => {
     <Link href={'/'}>
        <Image width={100} height={100} alt='profile-picture' 
        src={'https://cdn-icons-png.flaticon.com/512/6073/6073873.png'}
-       className='h-10 w-10'
+       className='h-10 w-10 border-4 border-white rounded-full'
        
        />
     </Link> 

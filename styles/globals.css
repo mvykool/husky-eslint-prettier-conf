@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .bar-icons {
+    @apply h-8 w-8 text-white}
+    
+  
+  }
+  
+
 :root{
     --bg-dark:#041c32;
     --bg-light:#FEFCF3;
