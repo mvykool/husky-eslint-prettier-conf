@@ -21,12 +21,6 @@ export default function Home({posts}: Props) {
       <main >
         <div className='bg-[var(--bg-dark)] w-screen h-screen' > 
 
-        {/**categories */}
-
-       <div className='w-[95vw] mx-auto'>
-       <Categories/>
-       </div>
-
         {/**feed */}
 
         

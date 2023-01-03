@@ -22,7 +22,7 @@ const Bar = () => {
      {/**add link */}
 
      <Link href={'/'}>
-       <TiPlus className='bar-icons'/>
+       <TiPlus className='bar-icons p-1 rounded-full border-2 border-white'/>
     </Link>  
 
      {/**add link */}

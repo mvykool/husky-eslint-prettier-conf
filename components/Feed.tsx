@@ -14,8 +14,8 @@ const Feed = ({posts}: Props) => {
 
 return (
   <>
-    <div className='pt-10 ml-8 text-white font-semibold'>
-        <h3>Discover</h3>
+    <div className='pt-24 ml-5 '>
+        <h3 className='text-white text-lg font-semibold'>Discover</h3>
     </div>
   <div className='grid grid-cols-2 gap-2 w-[95vw] mx-auto'>
   {posts?.map((post: any) => (
