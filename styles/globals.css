@@ -5,7 +5,8 @@
 :root{
     --bg-dark:#041c32;
     --bg-light:#FEFCF3;
-    --bg-nav: rgba(2, 10, 19, 0.5)
+    --bg-nav: rgba(2, 10, 19, 0.5);
+    --gradient: rgb(239,150,197);
 }
 
 .gradient{
@@ -20,6 +21,5 @@
 .gradient-text{
     background: -webkit-linear-gradient(151deg,  rgba(145,168,208,1) 70%, rgba(239,150,197,1) 90%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-      
+    -webkit-text-fill-color: transparent;   
 }
