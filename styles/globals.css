@@ -16,3 +16,10 @@
 .navbar{
     backdrop-filter: blur(4px);
 }
+
+.gradient-text{
+    background: -webkit-linear-gradient(151deg,  rgba(145,168,208,1) 70%, rgba(239,150,197,1) 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+      
+}

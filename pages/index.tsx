@@ -23,7 +23,9 @@ export default function Home({posts}: Props) {
 
         {/**categories */}
 
-        <Categories/>
+       <div className='w-[95vw] mx-auto'>
+       <Categories/>
+       </div>
 
         {/**feed */}
 
