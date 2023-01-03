@@ -1,6 +1,7 @@
 import React from 'react'
-import { TiThSmall } from 'react-icons/ti'
+import {BsGearFill} from 'react-icons/bs'
 import { FaSearch} from 'react-icons/fa'
+import Link from 'next/link'
 
 const Navbar = () => {
   return (
@@ -18,11 +19,11 @@ const Navbar = () => {
         </form>
        </div>
 
-      {/**menu and more */}
+      {/**go to categories*/}
 
-      <div>
-        <TiThSmall className='h-6 w-6 text-[var(--gradient)]'/>
-      </div>
+      <Link href={'/'}>
+       <BsGearFill className='h-6 w-6 text-[var(--gradient)]'/>
+    </Link>  
     </div>
   )
 }
