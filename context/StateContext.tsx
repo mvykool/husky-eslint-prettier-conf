@@ -1,14 +1,14 @@
 import React, { createContext, useContext, useState } from "react";
 
-const Context = createContext<any>(({ showCart: false, setShowCart: () => {} }));
+const Context = createContext<any>(({ showMenu: false, setShowMenu: () => {} }));
 
 export const StateContext = ({ children }: { children: React.ReactNode }) => {
 
-    const [showCart, setShowCart] = useState(false);
+    const [showMenu, setShowMenu] = useState(false);
 
     return (
         <div>
-            <Context.Provider value={{ showCart, setShowCart }}>
+            <Context.Provider value={{ showMenu, setShowMenu }}>
                 {children}
             </Context.Provider>
         </div>

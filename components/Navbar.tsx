@@ -2,8 +2,16 @@ import React from 'react'
 import {BsGearFill} from 'react-icons/bs'
 import { FaSearch} from 'react-icons/fa'
 import Link from 'next/link'
+import { useStateContext } from '../context/StateContext'
+import Mobilemenu from './Mobilemenu'
 
 const Navbar = () => {
+
+ 
+  //open menu
+
+  const { showMenu, setShowMenu } = useStateContext();
+
   return (
     <div className='h-16 bg-[var(--bg-nav)] fixed w-full navbar flex justify-around items-center'>
       {/**logo */}
@@ -19,11 +27,14 @@ const Navbar = () => {
         </form>
        </div>
 
-      {/**go to categories*/}
+      {/*open config*/}
 
-      <Link href={'/'}>
-       <BsGearFill className='h-6 w-6 text-[var(--gradient)]'/>
-    </Link>  
+      
+       <BsGearFill className='h-6 w-6 text-[var(--gradient)] 'onClick={() => setShowMenu(true)}/>
+     
+
+       {showMenu && <Mobilemenu/>}
+
     </div>
   )
 }
