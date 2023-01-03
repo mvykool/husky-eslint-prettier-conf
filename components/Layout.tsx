@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import React from 'react'
+import Bar from './Bar'
 import Footer from './Footer'
 import Navbar from './Navbar'
 import Sidebar from './Sidebar'
@@ -31,6 +32,12 @@ const Layout = ({ children }: Props) => {
         {children}
       </main>
      </div>
+  
+
+     <div>
+      <Bar/>
+     </div>
+
       <footer>
         <Footer/>
       </footer>

@@ -4,7 +4,7 @@ import { topics } from '../utils/topics'
 const Categories = () => {
   return (
     <div>
-      <div className='pt-20 ml-5 gradient-text font-semibold'>
+      <div className='pt-20 ml-5 text-white font-semibold'>
         <h3>Categories</h3>
       </div>
       <div className='flex justify-center space-x-5 pt-5 pl-20 pb-6 items-center overflow-x-auto'>

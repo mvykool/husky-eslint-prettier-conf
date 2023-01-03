@@ -1,23 +1,28 @@
 import React from 'react'
 import { urlFor } from '../lib/client'
 import Image from 'next/image'
+import Posts from './Posts'
 
 interface Props {
-    post: any
+    posts: any
     image: any
   }
   
 
 
-const Feed = ({post}: Props) => {
+const Feed = ({posts}: Props) => {
 
-
-
-
-  return (
-    <div className=' mt-10'>
-      <Image width={400} height={400} alt='pic' src={urlFor(post.image && post.image[0]).url()} />
+return (
+  <>
+    <div className='pt-10 ml-8 text-white font-semibold'>
+        <h3>Discover</h3>
     </div>
+  <div className='grid grid-cols-2 gap-2 w-[95vw] mx-auto'>
+  {posts?.map((post: any) => (
+    <Posts post={post} key={post._id} image={undefined}/>
+  ))}
+</div>
+</>
   )
 }
 
