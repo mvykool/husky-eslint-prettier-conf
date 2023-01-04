@@ -2,6 +2,7 @@ import Head from 'next/head'
 import React from 'react'
 import Categories from '../components/Categories'
 
+
 const category = () => {
   return (
     <>

@@ -1,20 +1,33 @@
 import React from 'react'
 import { topics } from '../utils/topics'
 import Image from 'next/image'
+import Masonry from 'react-masonry-css'
+
+
+const breakpointObj ={
+  default:4,
+  3000:6,
+  2000:5,
+  1200:3,
+  1000:2,
+  500:2,
+}
 
 const Categories = () => {
   return (
   <>
       <div className='mt-10'>
+      <Masonry
+          breakpointCols={breakpointObj}
+          className="flex w-[95vw] mx-auto space-x-1">
     
-      <div className='flex flex-wrap w-[95vw] mx-auto'>
+      
         {topics.map((topic) => (
-            <div key={topic.name} className='gradient p-1 my-2 rounded-md text-white'>
-               <Image width={500} height={500} alt='category' src={topic.image}
-               className='h-[40vh]' />
-            </div>
+         
+               <Image width={500} height={500} alt='category' src={topic.image} className='h-auto my-1'/>
         ))}
-      </div>
+   
+      </Masonry>
       </div>
   </>
   )
