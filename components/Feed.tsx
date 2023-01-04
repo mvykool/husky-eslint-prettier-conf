@@ -17,7 +17,7 @@ return (
     <div className='pt-24 ml-5 '>
         <h3 className='text-white text-lg font-semibold'>Discover</h3>
     </div>
-  <div className='grid grid-cols-2 gap-2 w-[95vw] mx-auto'>
+  <div className='grid grid-cols-2 gap-2 w-[94vw] mx-auto'>
   {posts?.map((post: any) => (
     <Posts post={post} key={post._id} image={undefined}/>
   ))}
