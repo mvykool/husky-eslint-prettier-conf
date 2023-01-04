@@ -34,5 +34,13 @@ export const topics = [
     {
         name: 'Music',
         image: '/music.jpg'
+    },
+    {
+        name: 'Food',
+        image: '/food.jpg'
+    },
+    {
+        name: 'Others',
+        image: '/others.jpg'
     }
 ];    

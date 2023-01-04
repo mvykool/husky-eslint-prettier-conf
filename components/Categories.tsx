@@ -9,7 +9,6 @@ const breakpointObj ={
   3000:6,
   2000:5,
   1200:3,
-  1000:2,
   500:2,
 }
 
@@ -24,7 +23,7 @@ const Categories = () => {
       
         {topics.map((topic) => (
          
-               <Image width={500} height={500} alt='category' src={topic.image} className='h-auto my-1'/>
+               <Image width={500} height={500} alt='category' src={topic.image} className='my-1'/>
         ))}
    
       </Masonry>
