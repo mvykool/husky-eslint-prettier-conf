@@ -28,16 +28,16 @@ export const topics = [
         image: '/cyberpunk.jpg'
     },
     {
-        name: 'Art',
-        image: '/art.jpg'
-    },
-    {
         name: 'Music',
         image: '/music.jpg'
     },
     {
         name: 'Food',
         image: '/food.jpg'
+    },
+    {
+        name: 'Art',
+        image: '/art.jpg'
     },
     {
         name: 'Others',
