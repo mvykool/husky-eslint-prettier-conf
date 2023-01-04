@@ -13,7 +13,7 @@ const category = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     
-        <div className='bg-[var(--bg-dark)] w-screen pb-40' > 
+        <div className='bg-[var(--bg-dark)] w-screen pb-20' > 
           
           {/**title */}
           <div className='pt-24 ml-5'>
