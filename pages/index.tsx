@@ -19,7 +19,7 @@ export default function Home({posts}: Props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main >
-        <div className='bg-[var(--bg-dark)] w-screen h-screen' > 
+        <div className='bg-[var(--bg-dark)] w-screen h-[100vh]' > 
 
         {/**feed */}
 

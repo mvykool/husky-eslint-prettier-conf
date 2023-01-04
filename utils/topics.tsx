@@ -33,6 +33,6 @@ export const topics = [
     },
     {
         name: 'Music',
-        image: '/music'
+        image: '/music.jpg'
     }
 ];    
