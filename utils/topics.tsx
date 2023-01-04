@@ -1,29 +1,38 @@
 export const topics = [
     {
         name: 'Anime',
+        image: '/anime.jpg'
     },
     {
-        name: 'Retro'
+        name: 'Retro',
+        image: '/retro.jpg'
     },
     {
-        name: 'Nature'
+        name: 'Nature',
+        image: '/nature.jpg'
     },
     {
-        name: 'Video-games'
+        name: 'Video-games',
+        image: '/game.jpeg'
     },
     {
-        name: 'Photography'
+        name: 'Photography',
+        image: '/photo.jpg'
     },
     {
-        name: 'Pixel-Art'
+        name: 'Pixel-Art',
+        image: '/pixel.jpg'
     },
     {
-        name: 'CyberPunk'
+        name: 'CyberPunk',
+        image: '/cyberpunk.jpg'
     },
     {
-        name: 'Art'
+        name: 'Art',
+        image: '/art.jpg'
     },
     {
-        name: 'Music'
+        name: 'Music',
+        image: '/music'
     }
 ];    
