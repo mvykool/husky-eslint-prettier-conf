@@ -3,6 +3,18 @@ import { topics } from '../utils/topics'
 import Image from 'next/image'
 import Masonry from 'react-masonry-css'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
+
+/**framer motion variants */
+ 
+const sectionVariant = {
+  hidden : { opacity: 0},
+  show: { opacity: 1,
+  transition: { duration: 1, delay: 0.5}
+  }
+}
+
+
 
 
 const breakpointObj ={
@@ -24,15 +36,20 @@ const Categories = () => {
       
         {topics.map((item) => (
          
-        <div className='my-2'>
+        <motion.div
+        variants={sectionVariant}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className='my-2'>
            <Link href={{ pathname: `/category/${item.name}`}} key={item.name} className=' relative'>
          <p 
-         className='w-full h-full z-10 absolute bg-[var(--fade)] text-lg font-semibold text-white flex justify-center p-4'>{item.name}</p>
+         className='w-full h-full z-10 absolute bg-[var(--fade)] text-lg font-semibold text-white flex justify-center p-4 rounded-md'>{item.name}</p>
         <img 
   
-        src={item.image} alt='cat-pic' className=' w-full' />
+        src={item.image} alt='cat-pic' className=' w-full rounded-md' />
        </Link>
-        </div>
+        </motion.div>
         ))}
    
       </Masonry>

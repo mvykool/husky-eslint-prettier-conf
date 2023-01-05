@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const Bar = () => {
   return (
-    <div className='h-14 w-full space-x-2 fixed bottom-0 gradient flex justify-around items-center'>
+    <div className='h-14 w-full space-x-2 fixed bottom-0 gradient flex justify-around items-center z-30'>
 
     {/**home link */}
 
