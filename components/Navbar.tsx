@@ -1,7 +1,6 @@
 import React from 'react'
 import {BsGearFill} from 'react-icons/bs'
 import { FaSearch} from 'react-icons/fa'
-import Link from 'next/link'
 import { useStateContext } from '../context/StateContext'
 import Mobilemenu from './Mobilemenu'
 
@@ -30,7 +29,7 @@ const Navbar = () => {
       {/*open config*/}
 
       
-       <BsGearFill className='h-6 w-6 text-[var(--gradient)] 'onClick={() => setShowMenu(true)}/>
+       <BsGearFill className='h-6 w-6 text-[var(--gradient)] hover:scale-125 duration-100 hover:rotate-180 'onClick={() => setShowMenu(true)}/>
      
 
        {showMenu && <Mobilemenu/>}
