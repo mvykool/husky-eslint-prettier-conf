@@ -2,6 +2,7 @@ import React from 'react'
 import { topics } from '../utils/topics'
 import Image from 'next/image'
 import Masonry from 'react-masonry-css'
+import Link from 'next/link'
 
 
 const breakpointObj ={
@@ -18,12 +19,20 @@ const Categories = () => {
       <div className='mt-10'>
       <Masonry
           breakpointCols={breakpointObj}
-          className="flex w-[95vw] mx-auto space-x-1">
+          className="flex w-[95vw] mx-auto space-x-2">
     
       
-        {topics.map((topic) => (
+        {topics.map((item) => (
          
-               <Image width={500} height={500} alt='category' src={topic.image} className='my-1'/>
+        <div className='my-2'>
+           <Link href={{ pathname: `/category/${item.name}`}} key={item.name} className=' relative'>
+         <p 
+         className='w-full h-full z-10 absolute bg-[var(--fade)] text-lg font-semibold text-white flex justify-center p-4'>{item.name}</p>
+        <img 
+  
+        src={item.image} alt='cat-pic' className=' w-full' />
+       </Link>
+        </div>
         ))}
    
       </Masonry>
