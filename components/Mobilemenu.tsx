@@ -7,7 +7,7 @@ import { motion, AnimatePresence} from 'framer-motion'
 const sectionVariant = {
   hidden : { opacity: 0, x: 100},
   show: { opacity: 1, x:0,
-  transition: {ease: "easeOut", duration: 1, delay: 0.3}
+  transition: {ease: "easeOut", duration: 0.5, delay: 0.3}
   }
 } 
   
