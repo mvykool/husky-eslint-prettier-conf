@@ -10,7 +10,7 @@ import { motion } from 'framer-motion'
 const sectionVariant = {
   hidden : { opacity: 0},
   show: { opacity: 1,
-  transition: { duration: 1, delay: 0.5}
+  transition: { duration: 1, delay: 0.7}
   }
 }
 
@@ -46,7 +46,7 @@ const Categories = () => {
         >
            <Link href={{ pathname: `/category/${item.name}`}} key={item.name} className=' relative'>
          <p 
-         className='w-full h-full z-10 absolute bg-[var(--fade)] text-lg font-semibold text-white flex justify-center p-4 rounded-md'>{item.name}</p>
+         className='w-full h-full z-10 absolute bg-[var(--fade)] text-lg font-semibold text-white flex justify-center p-4 rounded-md categories-img'>{item.name}</p>
         <img 
   
         src={item.image} alt='cat-pic' className=' w-full rounded-md' />

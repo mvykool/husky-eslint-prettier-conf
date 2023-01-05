@@ -50,3 +50,12 @@
     background: grey;
     margin-bottom: 30px;
   }
+
+
+  .categories-img:hover{
+    backdrop-filter: blur(2px);
+    --fade: rgba(0,0,0, 0.6);
+    transition: 500ms;
+  }
+
+  
