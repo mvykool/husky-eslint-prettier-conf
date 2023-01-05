@@ -13,7 +13,7 @@ const Navbar = () => {
   const { showMenu, setShowMenu } = useStateContext();
 
   return (
-    <div className='h-16 bg-[var(--bg-nav)] fixed w-full navbar flex justify-around items-center z-30'>
+    <div className='h-16 bg-[var(--bg-nav)] fixed w-full navbar flex justify-around items-center z-50'>
       {/**logo */}
        <h1 className='gradient-text'>Descry</h1>
       {/**search */}
