@@ -41,7 +41,9 @@ const Categories = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
-        className='my-2'>
+        className='my-2'
+        key={item.name}
+        >
            <Link href={{ pathname: `/category/${item.name}`}} key={item.name} className=' relative'>
          <p 
          className='w-full h-full z-10 absolute bg-[var(--fade)] text-lg font-semibold text-white flex justify-center p-4 rounded-md'>{item.name}</p>

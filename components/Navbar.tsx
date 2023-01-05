@@ -11,6 +11,22 @@ const Navbar = () => {
 
   const { showMenu, setShowMenu } = useStateContext();
 
+  //lock scrolling when modals are opened 
+
+
+if (typeof window !== "undefined") {
+  let body = window.document.body;
+
+ if(showMenu === true){
+  body.style.position = 'fixed'
+  body.style.overflow = 'hidden'
+}else {
+  body.style.position = 'relative'
+  body.style.overflow = 'auto'
+}
+}
+
+
   return (
     <div className='h-16 bg-[var(--bg-nav)] fixed w-full navbar flex justify-around items-center z-50'>
       {/**logo */}
