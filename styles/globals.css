@@ -11,29 +11,26 @@
   
 
 :root{
-    --bg-dark:#041c32;
+    --bg-dark:#372948;
     --bg-light:#FEFCF3;
-    --bg-nav: rgba(2, 10, 19, 0.5);
-    --gradient: rgb(239,150,197);
+    --bg-nav: rgba(37, 27, 55, 0.5);
+    --gradient: #FFCACA;
     --search:rgb(145,168,208);
-    --fade: rgba(0,0,0, 0.3);
+    --fade: rgba(0,0,0, 0.5);
 }
 
 
 
 .gradient{
-    background: rgb(204,251,255);
-    background: linear-gradient(151deg,  rgba(145,168,208,1) 32%, rgba(239,150,197,1) 80%);
+    background: #251B37;
 }
 
 .navbar{
     backdrop-filter: blur(4px);
 }
 
-.gradient-text{
-    background: -webkit-linear-gradient(151deg,  rgba(145,168,208,1) 70%, rgba(239,150,197,1) 90%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;   
+.app-light{
+  background-color: #FFCACA; 
 }
 
 .my-masonry-grid {

@@ -18,7 +18,7 @@ const category = () => {
           {/**title */}
           <div className='pt-24 ml-5'>
              <h2 className='text-white text-lg font-semibold'>Categories</h2>
-             <div className='gradient w-[26%] h-[3px]' />
+             <div className='app-light w-[26%] h-[3px]' />
           </div>
 
           {/**categories */}
