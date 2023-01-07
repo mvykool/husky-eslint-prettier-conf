@@ -6,6 +6,8 @@ export const StateContext = ({ children }: { children: React.ReactNode }) => {
 
     const [showMenu, setShowMenu] = useState(false);
 
+    
+
     return (
         <div>
             <Context.Provider value={{ showMenu, setShowMenu }}>
