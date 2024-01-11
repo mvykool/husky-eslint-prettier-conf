@@ -1,4 +1,4 @@
-Personal conf
+**Personal conf**
 
 It focuses on keeping code quality, consistency, and ease of development.
 Project Structure
@@ -14,7 +14,7 @@ The project follows a straightforward structure to enhance organization and main
 
 Pre-Commit Checks
 
-Our pre-commit hook runs several checks to maintain code quality and ensure a smooth development experience:
+pre-commit hook runs several checks to maintain code quality and ensure a smooth development experience:
 
     Prettier Cleanliness 🧼
         Ensures no Prettier warnings in the code, promoting consistent and readable formatting.
