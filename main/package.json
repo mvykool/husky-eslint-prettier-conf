@@ -9,7 +9,10 @@
     "lint": "next lint",
     "lint:fix": "eslint --fix --ext .ts,.tsx .",
     "format": "prettier --write .",
-    "prepare": "cd .. && husky install main/.husky"
+    "prepare": "cd .. && husky install main/.husky",
+    "check-types": "tsc --pretty --noEmit",
+    "check-format": "prettier --check .",
+    "check-lint": "eslint . --ext ts --ext tsx --ext js"
   },
   "dependencies": {
     "next": "14.0.4",
