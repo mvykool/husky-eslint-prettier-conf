@@ -1,26 +1,25 @@
 {
   "env": {
     "browser": true,
-    "es2021": true,
-    "jest": true
+    "es2021": true
   },
   "extends": [
-    "airbnb",
-    "airbnb-typescript",
-    "plugin:import/typescript"
+    "standard-with-typescript",
+    "plugin:react/recommended",
+    "plugin:@next/next/recommended"
   ],
-  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
     "ecmaVersion": "latest",
-    "sourceType": "module",
-    "project": "./tsconfig.json"
+    "sourceType": "module"
   },
   "plugins": [
     "react",
-    "@typescript-eslint"
+    "@next/next"
   ],
-  "rules": {}
+  "rules": {
+    "quotes": [
+      "error",
+      "double"
+    ]
+  }
 }
